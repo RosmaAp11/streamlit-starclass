@@ -25,9 +25,9 @@ star_clasifikasi = ''
 
 # membuat tombol untuk prediksi
 if st.button('Test Prediksi'):
-    star_prediction = starsclass_model.predict([[Temperature ,L, R, A_M, Color, Spectral_Class]])
+   star_prediction = starsclass_model.predict([[Temperature ,L, R, A_M, Color, Spectral_Class]])
     
- if(star_prediction[0]==0):
+        if(star_prediction[0]==0):
             star_clasifikasi = 'Bintang Tipe Red Dwarf'
         elif(star_prediction[0]==1):
             star_clasifikasi ='Bintang Tipe Brown Dwarf'
